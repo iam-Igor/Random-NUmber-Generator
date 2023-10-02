@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="number">
+        <h1 id="number-show"></h1>
+        <button id="button">Generate Number</button>
+        <input
+          type="range"
+          min="0"
+          max="500"
+          oninput="rangeValue.innerText = this.value"
+        />
+        <p>Generate a number between 0 and..</p>
+        <p id="rangeValue"></p>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
